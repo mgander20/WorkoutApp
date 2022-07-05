@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
-//        val flStartButton : FrameLayout = findViewById(R.id.flStart)
         binding?.flStart?.setOnClickListener{
             val intent = Intent(this, ExerciseActivity::class.java)
             startActivity(intent)
