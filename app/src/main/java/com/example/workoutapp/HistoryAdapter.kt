@@ -1,11 +1,11 @@
-package com.example.a7minuteworkout
+package com.example.workoutapp
 
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.a7minuteworkout.databinding.ItemHistoryRowBinding
+import com.example.workoutapp.databinding.ItemHistoryRowBinding
 
 class HistoryAdapter(private val items: ArrayList<String>): RecyclerView.Adapter<HistoryAdapter.ViewHolder> (){
 
@@ -15,13 +15,13 @@ class HistoryAdapter(private val items: ArrayList<String>): RecyclerView.Adapter
         val tvPosition = binding.tvPosition
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HistoryAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(ItemHistoryRowBinding.inflate(
             LayoutInflater.from(parent.context), parent, false)
         )
     }
 
-    override fun onBindViewHolder(holder: HistoryAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val date : String = items.get(position)
         holder.tvPosition.text = "${position + 1}"
         holder.tvItem.text = date

@@ -1,4 +1,4 @@
-package com.example.a7minuteworkout
+package com.example.workoutapp
 
 import android.app.Dialog
 import android.content.Intent
@@ -10,10 +10,9 @@ import android.os.CountDownTimer
 import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.view.View
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.a7minuteworkout.databinding.ActivityExerciseBinding
-import com.example.a7minuteworkout.databinding.DialogCustomBackConfirmationBinding
+import com.example.workoutapp.databinding.ActivityExerciseBinding
+import com.example.workoutapp.databinding.DialogCustomBackConfirmationBinding
 import java.lang.Exception
 import java.util.*
 import kotlin.collections.ArrayList

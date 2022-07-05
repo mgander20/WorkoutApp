@@ -1,12 +1,12 @@
-package com.example.a7minuteworkout
+package com.example.workoutapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.a7minuteworkout.databinding.ActivityHistoryBinding
+import com.example.workoutapp.HistoryDao
+import com.example.workoutapp.databinding.ActivityHistoryBinding
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 

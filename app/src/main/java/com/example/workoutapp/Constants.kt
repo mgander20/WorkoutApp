@@ -1,4 +1,4 @@
-package com.example.a7minuteworkout
+package com.example.workoutapp
 
 object Constants {
 

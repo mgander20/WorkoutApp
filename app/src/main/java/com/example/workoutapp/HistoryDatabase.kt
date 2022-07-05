@@ -1,9 +1,10 @@
-package com.example.a7minuteworkout
+package com.example.workoutapp
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.workoutapp.HistoryEntity
 
 @Database(entities = [HistoryEntity::class], version = 1)
 abstract class HistoryDatabase : RoomDatabase(){
@@ -14,7 +15,7 @@ abstract class HistoryDatabase : RoomDatabase(){
         @Volatile
         private var INSTANCE : HistoryDatabase? = null
 
-        fun getInstance(context : Context) : HistoryDatabase{
+        fun getInstance(context : Context) : HistoryDatabase {
 
             synchronized(this){
                 var instance = INSTANCE

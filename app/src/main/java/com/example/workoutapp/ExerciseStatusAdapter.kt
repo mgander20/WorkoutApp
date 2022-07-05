@@ -1,11 +1,11 @@
-package com.example.a7minuteworkout
+package com.example.workoutapp
 
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.a7minuteworkout.databinding.ItemExerciseStatusBinding
+import com.example.workoutapp.databinding.ItemExerciseStatusBinding
 
 class ExerciseStatusAdapter(val items: ArrayList<ExerciseModel>) :
     RecyclerView.Adapter <ExerciseStatusAdapter.ViewHolder>(){
